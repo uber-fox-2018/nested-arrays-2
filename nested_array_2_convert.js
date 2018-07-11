@@ -55,8 +55,18 @@ function formatRoster(keyArr, valueArr) {
 
 let object_student = convert_roster_format(students)
 console.log(object_student[0])
-console.log(object_student[1]['Address']['Region'])
-console.log(object_student[2]['Scores'][0]['Score'])
+// =>{ Name: 'Drake',
+//   Address:
+//   { Street: 'Grasshill 12',
+//     City: 'Greenwood',
+//     Region: 'Ashenvale' },
+//  Scores:
+//   [ { Subject: 'Math', Score: '8' },
+//     { Subject: 'English', Score: '7' },
+//     { Subject: 'Biology', Score: '9' } ] }
+
+console.log(object_student[1]['Address']['Region']) // => Jewelline
+console.log(object_student[2]['Scores'][0]['Score']) // => 7
 
 module.exports = {
   convert_roster_format
