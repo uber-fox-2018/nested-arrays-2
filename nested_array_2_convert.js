@@ -13,6 +13,17 @@ let roster = [
 
 function convert_roster_format (nestedArray) {
   // your convert code here
+  let convertRosterFortmat = []
+  for (let i = 1; i < nestedArray.length; i++) {
+    let rosterObj = {
+      "Number": nestedArray[i][0],
+      "Name": nestedArray[i][1],
+      "Position": nestedArray[i][2],
+      "Points per Game": nestedArray[i][3]
+    }
+    convertRosterFortmat.push(rosterObj)
+  }
+  return convertRosterFortmat
 }
 
 let object_roster = convert_roster_format(roster)
