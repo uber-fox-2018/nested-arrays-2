@@ -25,7 +25,7 @@ function convert_roster_format(roster) {
     output.push(players);
   }
 
-  return output
+  return output;
   
 }
 
